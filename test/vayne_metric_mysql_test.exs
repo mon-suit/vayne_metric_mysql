@@ -78,8 +78,8 @@ defmodule VayneMetricMysqlTest do
 
   test "connect wrong server" do
     [
-      %{"hostname" => "redis", "port" => 6379},
-      %{"hostname" => "mongo", "port" => 27017},
+      %{"hostname" => "127.0.0.1", "port" => 6379},
+      %{"hostname" => "127.0.0.1", "port" => 27017},
     ]
     |> Enum.map(fn params ->
 
